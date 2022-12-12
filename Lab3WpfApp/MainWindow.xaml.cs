@@ -29,7 +29,7 @@ namespace Lab3WpfApp
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            string fontName = ((sender as ComboBox).SelectedItem as TextBlock).Text;
+            string fontName = ((sender as ComboBox).SelectedItem as string);
             if (textBox != null)
             {
                 textBox.FontFamily = new FontFamily(fontName);
@@ -40,7 +40,7 @@ namespace Lab3WpfApp
         {
             if (textBox != null)
             {
-                double fonSize = Convert.ToDouble(((sender as ComboBox).SelectedItem as TextBlock).Text);
+                double fonSize = Convert.ToDouble(((sender as ComboBox).SelectedItem as string));
                 textBox.FontSize = fonSize;
             }
         }
