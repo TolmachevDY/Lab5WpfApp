@@ -119,7 +119,7 @@ namespace Lab3WpfApp
             }
         }
 
-        private void MenuItem_Click_2(object sender, RoutedEventArgs e)
+        private void ExitExecuted(object sender, ExecutedRoutedEventArgs e)
         {
             Application.Current.Shutdown();
         }
